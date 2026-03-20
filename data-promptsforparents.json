@@ -1,0 +1,104 @@
+{
+    "url": "https://promptsforparents.org",
+    "brand_name": "Prompts for Parents",
+    "date": "2026-03-20",
+    "geo_score": 8,
+    "scores": {
+        "ai_citability": 5,
+        "brand_authority": 5,
+        "content_eeat": 10,
+        "technical": 8,
+        "schema": 5,
+        "platform_optimization": 5
+    },
+    "platforms": {
+        "Google AI Overviews": 5,
+        "ChatGPT": 5,
+        "Perplexity": 5,
+        "Gemini": 5,
+        "Bing Copilot": 5
+    },
+    "executive_summary": "This report presents the findings of a comprehensive Generative Engine Optimization (GEO) audit conducted on Prompts for Parents (https://promptsforparents.org). The site achieved an overall GEO Readiness Score of 8/100, placing it in the Critical — Needs Attention tier. The site is currently invisible to AI search engines: it is not indexed by Google, returns connection errors when crawled, has zero brand mentions across the web, and no structured data was detectable. No content, schema markup, robots.txt, sitemap, or llms.txt file could be accessed. This site requires foundational work across all GEO dimensions before it can begin competing for AI visibility in the parenting/AI prompts niche.",
+    "findings": [
+        {
+            "severity": "critical",
+            "title": "Site Not Indexed by Any Search Engine",
+            "description": "The domain promptsforparents.org returns zero results on Google, Bing, and other search engines. Without indexing, AI systems that rely on search data cannot discover or cite the site."
+        },
+        {
+            "severity": "critical",
+            "title": "Site Returns Connection Errors (403/Timeout)",
+            "description": "Multiple crawl attempts returned HTTP 403 Forbidden or connection timeouts. AI crawlers (GPTBot, ClaudeBot, PerplexityBot) will fail to access the site, making AI citation impossible."
+        },
+        {
+            "severity": "critical",
+            "title": "Zero Brand Presence Across the Web",
+            "description": "No mentions of 'Prompts for Parents' or 'promptsforparents.org' were found on any platform (Reddit, YouTube, Wikipedia, LinkedIn, Pinterest, Instagram). AI models have no entity data for this brand."
+        },
+        {
+            "severity": "critical",
+            "title": "No Robots.txt or Sitemap Accessible",
+            "description": "Neither robots.txt nor sitemap.xml could be fetched. Without these, search engines and AI crawlers have no guidance on how to index the site."
+        },
+        {
+            "severity": "high",
+            "title": "No Structured Data (Schema.org) Detected",
+            "description": "No JSON-LD, Microdata, or RDFa markup was detectable. AI systems rely on structured data to understand entities, content types, and relationships."
+        },
+        {
+            "severity": "high",
+            "title": "No llms.txt File Present",
+            "description": "The emerging llms.txt standard helps AI systems understand site structure. Its absence means AI models have no curated guide to the site's content."
+        },
+        {
+            "severity": "high",
+            "title": "No Content Accessible for AI Citability Analysis",
+            "description": "Since the site could not be crawled, no content could be evaluated for quotability, answer-block quality, or passage self-containment."
+        },
+        {
+            "severity": "medium",
+            "title": "No Social Media Presence Detected",
+            "description": "No Pinterest, Instagram, YouTube, LinkedIn, or Twitter/X accounts were found for this brand. Social signals are important for AI entity recognition."
+        },
+        {
+            "severity": "medium",
+            "title": "No Author or E-E-A-T Signals Discoverable",
+            "description": "Without accessible content, no author bios, credentials, experience signals, or trust indicators could be evaluated."
+        },
+        {
+            "severity": "low",
+            "title": "Domain Age and Authority Unknown",
+            "description": "The domain appears very new with no backlink profile or domain authority. New domains require more effort to establish AI trust signals."
+        }
+    ],
+    "quick_wins": [
+        {"action": "Fix site accessibility — ensure the site returns HTTP 200 for all public pages", "impact": "Foundational: without this, no other optimization is possible"},
+        {"action": "Submit sitemap.xml to Google Search Console and Bing Webmaster Tools", "impact": "Get indexed by search engines, enabling AI discovery"},
+        {"action": "Create and deploy a robots.txt file that explicitly allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended, and Bingbot", "impact": "Enable AI crawler access immediately"},
+        {"action": "Create an llms.txt file with descriptions of key content pages", "impact": "Guide AI systems to your most valuable content"},
+        {"action": "Add Organization schema (JSON-LD) to the homepage with name, description, URL, and sameAs links", "impact": "Establish brand entity for AI systems"}
+    ],
+    "medium_term": [
+        {"action": "Build out 10-15 high-quality content pages with question-based headings and direct answer blocks optimized for AI citability", "impact": "Create quotable content AI systems can cite"},
+        {"action": "Implement comprehensive schema markup: Organization, WebSite, Article, FAQPage, Person (author), BreadcrumbList", "impact": "Make content machine-readable for all AI platforms"},
+        {"action": "Create author pages with credentials, expertise signals, and links to social profiles", "impact": "Establish E-E-A-T signals that AI systems evaluate"},
+        {"action": "Launch social media profiles on Pinterest, Instagram, YouTube, and LinkedIn under the brand name", "impact": "Build brand presence on platforms AI models use for entity recognition"},
+        {"action": "Publish 2-3 original research pieces or data studies about AI prompting for parents", "impact": "Original data is highly citable by AI systems"}
+    ],
+    "strategic": [
+        {"action": "Build Wikipedia/Wikidata entity presence through press coverage, expert contributions, and notability", "impact": "Wikipedia entities are the #1 signal for AI entity recognition"},
+        {"action": "Develop active Reddit engagement in r/Parenting, r/ChatGPT, r/ArtificialIntelligence with genuine value-add contributions", "impact": "Reddit is heavily cited by Perplexity and Google AI Overviews"},
+        {"action": "Create a YouTube channel with AI prompting tutorials for parents, optimized for AI-searched queries", "impact": "YouTube content appears in ChatGPT, Perplexity, and Google AIO results"},
+        {"action": "Establish a newsletter and email list to drive recurring traffic and engagement signals", "impact": "Engagement metrics influence AI systems' confidence in citing a source"},
+        {"action": "Build topical authority through comprehensive content clusters covering all aspects of AI-assisted parenting", "impact": "Topical authority is a key factor in AI citation decisions"}
+    ],
+    "crawler_access": {
+        "GPTBot": {"platform": "ChatGPT / OpenAI", "status": "Unknown (site inaccessible)", "recommendation": "Fix site access, then explicitly allow in robots.txt"},
+        "ClaudeBot": {"platform": "Claude / Anthropic", "status": "Unknown (site inaccessible)", "recommendation": "Fix site access, then explicitly allow in robots.txt"},
+        "PerplexityBot": {"platform": "Perplexity AI", "status": "Unknown (site inaccessible)", "recommendation": "Fix site access, then explicitly allow in robots.txt"},
+        "Google-Extended": {"platform": "Google Gemini / AI Overviews", "status": "Unknown (site inaccessible)", "recommendation": "Fix site access, then explicitly allow in robots.txt"},
+        "Bingbot": {"platform": "Bing Copilot", "status": "Unknown (site inaccessible)", "recommendation": "Fix site access, ensure proper indexing"},
+        "Bytespider": {"platform": "ByteDance / TikTok", "status": "Unknown (site inaccessible)", "recommendation": "Allow if pursuing TikTok audience"},
+        "CCBot": {"platform": "Common Crawl", "status": "Unknown (site inaccessible)", "recommendation": "Allow — Common Crawl feeds many AI training sets"}
+    }
+}

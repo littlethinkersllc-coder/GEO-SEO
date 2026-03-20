@@ -1,0 +1,114 @@
+{
+    "url": "https://themodernparentzone.com",
+    "brand_name": "The Modern Parent Zone",
+    "date": "2026-03-20",
+    "geo_score": 28,
+    "scores": {
+        "ai_citability": 25,
+        "brand_authority": 22,
+        "content_eeat": 32,
+        "technical": 30,
+        "schema": 22,
+        "platform_optimization": 20
+    },
+    "platforms": {
+        "Google AI Overviews": 30,
+        "ChatGPT": 22,
+        "Perplexity": 18,
+        "Gemini": 25,
+        "Bing Copilot": 20
+    },
+    "executive_summary": "This report presents the findings of a comprehensive Generative Engine Optimization (GEO) audit conducted on The Modern Parent Zone (https://themodernparentzone.com). The site achieved an overall GEO Readiness Score of 28/100, placing it in the Needs Attention tier. While the site IS indexed by Google and has some content covering parenting, meal planning, health, and fitness topics, it suffers from significant GEO gaps: stale content (last posts from 2023), pages under maintenance, minimal brand presence beyond Pinterest/Instagram, likely default WordPress schema only, no llms.txt file, and limited E-E-A-T signals with the About page currently down. The site has a foundation to build on but requires substantial optimization to become visible to AI search engines.",
+    "findings": [
+        {
+            "severity": "critical",
+            "title": "Content Staleness — No New Posts Since 2023",
+            "description": "The most recent content appears to date from 2023. AI systems heavily weight content freshness when deciding what to cite. Stale content signals to AI models that the site may no longer be authoritative or maintained."
+        },
+        {
+            "severity": "critical",
+            "title": "About Page Under Maintenance",
+            "description": "The About Us page (/about-us-2/) displays a maintenance message instead of content. This page is critical for E-E-A-T signals — AI systems use it to evaluate the expertise and trustworthiness of the site's authors."
+        },
+        {
+            "severity": "high",
+            "title": "No llms.txt File Detected",
+            "description": "No llms.txt file was found at the root domain. This emerging standard helps AI systems understand site structure and content priorities. Its absence means AI crawlers must infer site organization independently."
+        },
+        {
+            "severity": "high",
+            "title": "Limited Brand Presence — Only Pinterest and Instagram",
+            "description": "The brand has a Pinterest page (@themodernparentzone) and Instagram presence, but no YouTube channel, Reddit presence, LinkedIn company page, or Wikipedia/Wikidata entity. Brand mentions on these platforms correlate 3x more strongly with AI visibility than backlinks."
+        },
+        {
+            "severity": "high",
+            "title": "Likely Minimal Schema Markup (WordPress Defaults Only)",
+            "description": "WordPress provides basic schema through plugins like Yoast SEO, but without verification, the site likely has only default WebSite and Organization schema. Missing: Article, FAQPage, HowTo, Person (author), BreadcrumbList, and category-specific schemas."
+        },
+        {
+            "severity": "high",
+            "title": "Low Content Volume — Approximately 10 Published Posts",
+            "description": "With only ~10 posts covering diverse topics (parenting, finance, fitness, meals), the site lacks topical depth. AI systems favor sites with comprehensive content clusters demonstrating topical authority."
+        },
+        {
+            "severity": "medium",
+            "title": "Topic Fragmentation — Lacks Topical Focus",
+            "description": "Content spans parenting organization, S&P 500 investing, math curricula, digital budgets, and entrepreneurship. This broad scope weakens topical authority signals that AI systems use for citation decisions."
+        },
+        {
+            "severity": "medium",
+            "title": "No YouTube Presence for Video Content Claims",
+            "description": "The site claims to offer 'hours of educational TV shows and video content' but has no YouTube channel. YouTube is a major source platform for AI citations, especially for how-to and educational content."
+        },
+        {
+            "severity": "medium",
+            "title": "No Author Attribution Visible",
+            "description": "No author bylines, bios, or credentials were found in search results for the site's content. Author attribution is a key E-E-A-T signal for AI citation decisions."
+        },
+        {
+            "severity": "medium",
+            "title": "Robots.txt and AI Crawler Configuration Unknown",
+            "description": "Could not verify whether AI-specific crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) are allowed or blocked. Many WordPress sites inadvertently block these crawlers."
+        },
+        {
+            "severity": "low",
+            "title": "Mixed URL Structure Quality",
+            "description": "Some URLs use clean slugs (/fitness/, /health/) while others have numbered suffixes (/about-us-2/, /community-2/) suggesting page duplication or WordPress configuration issues."
+        },
+        {
+            "severity": "low",
+            "title": "Inconsistent Page Titles in Search Results",
+            "description": "The homepage shows '(no title)' in Google's index, indicating missing or improperly configured title tags. Page titles are important for AI systems to understand page purpose."
+        }
+    ],
+    "quick_wins": [
+        {"action": "Fix the About Us page immediately — restore it with team bios, credentials, mission statement, and expertise signals", "impact": "Critical E-E-A-T signal for AI systems evaluating site trustworthiness"},
+        {"action": "Add proper title tags to all pages, especially the homepage which shows '(no title)' in Google", "impact": "Helps AI systems understand page purpose and content relevance"},
+        {"action": "Create a robots.txt file explicitly allowing GPTBot, ClaudeBot, PerplexityBot, and Google-Extended", "impact": "Ensures AI crawlers can access your content for citation"},
+        {"action": "Create and deploy an llms.txt file describing the site's content structure and key pages", "impact": "Guides AI systems to your most valuable content"},
+        {"action": "Add author bylines with credentials to all existing blog posts", "impact": "Establishes expertise signals that AI systems use for citation trust"}
+    ],
+    "medium_term": [
+        {"action": "Publish 8-10 fresh, in-depth articles (1500+ words each) focused on your core parenting/meal planning niche with question-based headings", "impact": "Fresh, comprehensive content dramatically improves AI citability"},
+        {"action": "Implement comprehensive schema markup: Organization, Article, Person, FAQPage, HowTo, BreadcrumbList, and Recipe schemas", "impact": "Makes all content machine-readable for AI platforms"},
+        {"action": "Create a YouTube channel with meal planning tutorials, parenting tips, and educational content", "impact": "YouTube content is heavily cited by ChatGPT, Perplexity, and Google AI Overviews"},
+        {"action": "Consolidate topic focus — choose 3-4 core content pillars and build depth rather than breadth", "impact": "Topical authority is a key factor in AI citation decisions"},
+        {"action": "Fix all pages returning maintenance errors and clean up duplicate URL patterns (/about-us-2/ etc.)", "impact": "Clean site architecture improves crawlability and AI understanding"}
+    ],
+    "strategic": [
+        {"action": "Build Wikipedia/Wikidata entity presence for 'The Modern Parent Zone' through PR, expert contributions, and community growth", "impact": "Wikipedia entities are the strongest signal for AI entity recognition"},
+        {"action": "Develop active Reddit presence in r/Parenting, r/MealPrep, r/MealPlanYourWay with genuine community contributions", "impact": "Reddit mentions correlate strongly with Perplexity and Google AIO citations"},
+        {"action": "Create a LinkedIn company page and publish thought leadership articles on modern parenting", "impact": "LinkedIn content is indexed by AI systems and builds professional authority"},
+        {"action": "Establish an original research program — survey your 45K community and publish proprietary parenting data", "impact": "Original data/statistics are the most cited content type by AI systems"},
+        {"action": "Build email newsletter and community platform to drive engagement metrics that signal authority to AI systems", "impact": "Recurring engagement demonstrates sustained relevance"}
+    ],
+    "crawler_access": {
+        "GPTBot": {"platform": "ChatGPT / OpenAI", "status": "Unknown (could not verify)", "recommendation": "Verify robots.txt allows GPTBot access"},
+        "ClaudeBot": {"platform": "Claude / Anthropic", "status": "Unknown (could not verify)", "recommendation": "Verify robots.txt allows ClaudeBot access"},
+        "PerplexityBot": {"platform": "Perplexity AI", "status": "Unknown (could not verify)", "recommendation": "Verify robots.txt allows PerplexityBot access"},
+        "Google-Extended": {"platform": "Google Gemini / AI Overviews", "status": "Unknown (could not verify)", "recommendation": "Verify robots.txt allows Google-Extended"},
+        "Bingbot": {"platform": "Bing Copilot", "status": "Likely Allowed (site is indexed)", "recommendation": "Confirm Bing Webmaster Tools setup"},
+        "Googlebot": {"platform": "Google Search", "status": "Allowed (site is indexed)", "recommendation": "Maintain access"},
+        "CCBot": {"platform": "Common Crawl", "status": "Unknown (could not verify)", "recommendation": "Allow — feeds many AI training datasets"}
+    }
+}
