@@ -1,0 +1,127 @@
+<!--
+  MOBILE NAVIGATION FIX FOR WALTERMFUKO.COM
+  ==========================================
+  This fix needs to be applied to ALL pages that don't already have it.
+
+  Per user: Home, About, and Portfolio pages already have this fix.
+  APPLY TO: Contact/Hire Me page + ALL portfolio piece pages.
+
+  HOW TO APPLY IN WORDPRESS:
+  1. Edit each page in WordPress
+  2. Switch to the Code Editor (three dots menu > Code Editor)
+  3. Add the <style> block inside the existing HTML
+  4. Add the hamburger button HTML just before <ul class="nav-links" id="navLinks">
+  5. Update and publish
+-->
+
+<!-- ============================================================== -->
+<!-- STEP 1: Add this CSS inside a <style> tag on each page         -->
+<!-- ============================================================== -->
+<style>
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 16px !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .nav-links.open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #0a0a0a;
+    padding: 16px;
+    z-index: 9999;
+    gap: 12px;
+  }
+  .nav-links.open li a {
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s;
+  }
+  .nav-hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .nav-hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-hamburger {
+    display: none !important;
+  }
+}
+</style>
+
+
+<!-- ============================================================== -->
+<!-- STEP 2: Add this hamburger button just BEFORE the              -->
+<!--         <ul class="nav-links" id="navLinks"> element           -->
+<!-- ============================================================== -->
+<button class="nav-hamburger" id="navHamburger"
+  onclick="var nl=document.getElementById('navLinks');var hb=document.getElementById('navHamburger');nl.classList.toggle('open');hb.classList.toggle('open');"
+  aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+
+<!-- ============================================================== -->
+<!-- STEP 3: Make sure nav links say "Contact" not "Hire Me"        -->
+<!-- ============================================================== -->
+<!--
+  In the nav HTML, change:
+
+  OLD:  <li><a href="/hire-me/">HIRE ME</a></li>
+  NEW:  <li><a href="/hire-me/">CONTACT</a></li>
+
+  Keep the /hire-me/ URL slug - just change the visible text.
+-->
+
+
+<!-- ============================================================== -->
+<!-- FULL NAV EXAMPLE (for reference)                               -->
+<!-- ============================================================== -->
+<!--
+<nav class="nav">
+  <a href="/" class="logo">WM</a>
+
+  <button class="nav-hamburger" id="navHamburger"
+    onclick="var nl=document.getElementById('navLinks');var hb=document.getElementById('navHamburger');nl.classList.toggle('open');hb.classList.toggle('open');"
+    aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/portfolio/">PORTFOLIO</a></li>
+    <li><a href="/about/">ABOUT</a></li>
+    <li><a href="/hire-me/">CONTACT</a></li>
+  </ul>
+</nav>
+-->
