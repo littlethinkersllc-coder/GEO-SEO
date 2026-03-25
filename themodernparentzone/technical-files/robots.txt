@@ -1,0 +1,115 @@
+# robots.txt for themodernparentzone.com
+# Last updated: 2026-03-24
+#
+# Policy: Open access for all search engines and AI crawlers.
+# We welcome indexing and training on our publicly available content.
+
+# ============================================================
+# Default rule - allow everything
+# ============================================================
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# ============================================================
+# Traditional search engine crawlers
+# ============================================================
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ============================================================
+# AI and LLM crawlers
+# ============================================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ============================================================
+# Blocked paths (applies to all agents)
+# ============================================================
+# WordPress admin area (except AJAX endpoint used by front-end)
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# WordPress internals that should not be indexed
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-json/wp/v2/users
+Disallow: /?s=
+Disallow: /search/
+Disallow: /*?replytocom=
+Disallow: /xmlrpc.php
+Disallow: /readme.html
+Disallow: /license.txt
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /wp-trackback.php
+Disallow: /wp-cron.php
+Disallow: /wp-signup.php
+
+# Feed duplicates (keep main feed accessible)
+Disallow: /comments/feed/
+Disallow: /*/feed/$
+
+# Tag and author archives (thin content)
+Disallow: /tag/
+Disallow: /author/
+
+# ============================================================
+# Sitemap
+# ============================================================
+Sitemap: https://themodernparentzone.com/sitemap.xml
+Sitemap: https://themodernparentzone.com/sitemap_index.xml

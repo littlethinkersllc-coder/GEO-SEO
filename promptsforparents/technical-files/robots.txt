@@ -1,0 +1,70 @@
+# robots.txt for promptsforparents.org
+# Last updated: 2026-03-24
+
+# Default rule: allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /search?
+Disallow: /thank-you/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta
+User-agent: FacebookBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://promptsforparents.org/sitemap.xml

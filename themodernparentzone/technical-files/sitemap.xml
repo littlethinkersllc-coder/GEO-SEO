@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ============================================================ -->
+  <!-- Core Pages                                                    -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/about-us-2/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/community-2/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- Category / Pillar Pages                                       -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/fitness/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/health/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/adoption/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/Toddlers/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/parenting/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- Existing Blog Posts (2023 archive)                            -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/weekly-family-meal-plan-budget-friendly/</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/positive-parenting-strategies-toddlers/</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/indoor-activities-for-rainy-days/</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/postpartum-fitness-getting-started/</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/adoption-process-what-to-expect/</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- New Content - Meal Planning Cluster                           -->
+  <!-- Publish dates: Q2 2026                                        -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/30-minute-family-dinners-weeknight/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/meal-prep-sunday-complete-guide-parents/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/picky-eater-solutions-that-actually-work/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/school-lunch-ideas-kids-will-eat/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- New Content - Health & Wellness Cluster                       -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/boost-kids-immunity-naturally/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/parent-mental-health-self-care-guide/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/toddler-sleep-regression-survival-guide/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- New Content - Kids Activities Cluster                         -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/screen-free-activities-by-age/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/stem-activities-toddlers-preschoolers/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/sensory-play-ideas-developmental-benefits/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- New Content - Family Fitness Cluster                          -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/10-minute-workouts-busy-parents/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/family-hiking-trails-beginners/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- New Content - Parenting Tips Cluster                          -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/gentle-discipline-techniques-age-guide/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/bedtime-routine-chart-printable/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/managing-screen-time-practical-guide/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- New Content - Adoption Cluster                                -->
+  <!-- ============================================================ -->
+
+  <url>
+    <loc>https://themodernparentzone.com/foster-to-adopt-complete-guide/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://themodernparentzone.com/transracial-adoption-building-cultural-identity/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

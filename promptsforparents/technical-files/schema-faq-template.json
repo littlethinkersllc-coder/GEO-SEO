@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://promptsforparents.org/{{PAGE_PATH}}/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are AI prompts for parents and how do they work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI prompts for parents are pre-written instructions you copy into AI tools like ChatGPT, Claude, or Gemini to get helpful results for parenting tasks. For example, you can paste a homework help prompt to get a step-by-step math explanation at your child's grade level, or use a meal planning prompt to generate a week of kid-friendly dinners based on your family's dietary needs. No technical skills are required -- simply copy the prompt, paste it into your preferred AI tool, and customize the details in brackets to match your situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are AI-generated responses safe and appropriate for children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our prompts are specifically designed with child safety in mind. Each prompt includes built-in instructions that tell the AI to keep responses age-appropriate, educational, and free from harmful content. However, we always recommend that parents review AI-generated content before sharing it with children. AI tools can occasionally produce unexpected results, so parental oversight is an important part of using these tools responsibly. We also provide tips on each prompt page for reviewing and adapting the AI's output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI tools work best with your parenting prompts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our prompts are tested across all major AI platforms including ChatGPT (GPT-4), Claude by Anthropic, and Google Gemini. Most prompts work well with any of these tools, though we note on each prompt page if a particular AI tool produces especially strong results for that use case. For example, longer creative writing prompts like bedtime stories tend to perform well with Claude, while quick factual homework help works great with any platform. All of our prompts are free to use and work with the free tiers of these AI tools."
+      }
+    }
+  ]
+}

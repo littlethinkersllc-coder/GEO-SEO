@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{CANONICAL_URL}}#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I create a weekly meal plan for a family of four on a budget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start by choosing 5-6 dinners that share common ingredients to reduce waste and cost. Build your plan around sale items and seasonal produce. Prep proteins and grains in bulk on Sunday, then assemble meals throughout the week. A family of four can eat well on $75-$125 per week by batch cooking staples like rice, beans, and roasted vegetables, then rotating them into different meals -- tacos on Monday, stir-fry on Wednesday, grain bowls on Friday. Keep a running list of what your family actually eats to avoid buying ingredients that go unused."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best strategies for getting picky toddlers to try new foods?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most effective approach is repeated, low-pressure exposure. Offer a new food alongside familiar favorites at least 10-15 times before assuming your child dislikes it. Let toddlers interact with food through play -- touching, smelling, and even sorting counts as positive exposure. Serve tiny portions (one tablespoon) to reduce overwhelm. Involve kids in age-appropriate food preparation like washing vegetables or stirring batter. Avoid bribing or forcing bites, as this creates negative associations. Family-style meals where toddlers see parents and siblings eating the same foods naturally encourage imitation. Most picky eating phases resolve between ages 4-6."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far in advance should I meal prep, and how do I store meals safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most meal-prepped foods stay fresh in the refrigerator for 3-4 days, making Sunday the ideal prep day for a Monday-through-Thursday rotation. For a full week of coverage, freeze Thursday-through-Saturday meals in clearly labeled containers with the date and reheating instructions. Cooked grains and roasted vegetables refrigerate well for 5 days. Proteins should be consumed within 3-4 days if refrigerated, or frozen for up to 3 months. Store meals in airtight glass or BPA-free containers, and cool food to room temperature within 2 hours before refrigerating. For school lunches, pack the night before and include an ice pack to keep perishable items below 40 degrees Fahrenheit."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://themodernparentzone.com/#organization",
+      "name": "The Modern Parent Zone",
+      "url": "https://themodernparentzone.com",
+      "description": "A trusted parenting resource helping 45,000+ parents with practical guidance on meal planning, health, fitness, kids activities, adoption, and everyday parenting.",
+      "foundingDate": "2023",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://themodernparentzone.com/wp-content/uploads/2023/logo-modern-parent-zone.png",
+        "width": 600,
+        "height": 60
+      },
+      "image": "https://themodernparentzone.com/wp-content/uploads/2023/logo-modern-parent-zone.png",
+      "sameAs": [
+        "https://www.pinterest.com/themodernparentzone/",
+        "https://www.instagram.com/themodernparentzone/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://themodernparentzone.com/community-2/",
+        "availableLanguage": "English"
+      },
+      "knowsAbout": [
+        "Meal Planning for Families",
+        "Parenting Tips",
+        "Children's Health and Wellness",
+        "Kids Activities and Learning",
+        "Family Fitness",
+        "Adoption and Foster Care"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://themodernparentzone.com/#website",
+      "name": "The Modern Parent Zone",
+      "url": "https://themodernparentzone.com",
+      "description": "Practical parenting advice for meal planning, health, fitness, kids activities, and adoption from a community of 45K+ parents.",
+      "publisher": {
+        "@id": "https://themodernparentzone.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://themodernparentzone.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://themodernparentzone.com/#webpage",
+      "url": "https://themodernparentzone.com",
+      "name": "The Modern Parent Zone - Practical Parenting, Meal Planning & Family Wellness",
+      "description": "Join 45,000+ parents getting real-world advice on meal planning, health, fitness, kids activities, adoption, and everyday parenting tips.",
+      "isPartOf": {
+        "@id": "https://themodernparentzone.com/#website"
+      },
+      "about": {
+        "@id": "https://themodernparentzone.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://themodernparentzone.com/wp-content/uploads/2023/homepage-hero.jpg"
+      },
+      "breadcrumb": {
+        "@id": "https://themodernparentzone.com/#breadcrumb"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".site-title",
+          ".hero-description",
+          ".content-pillars"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://themodernparentzone.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://themodernparentzone.com/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://themodernparentzone.com/#content-categories",
+      "name": "Content Categories",
+      "description": "Main content pillars on The Modern Parent Zone",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Meal Planning",
+          "url": "https://themodernparentzone.com/category/meal-planning/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Parenting Tips",
+          "url": "https://themodernparentzone.com/parenting/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Health & Wellness",
+          "url": "https://themodernparentzone.com/health/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Kids Activities",
+          "url": "https://themodernparentzone.com/Toddlers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Family Fitness",
+          "url": "https://themodernparentzone.com/fitness/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Adoption",
+          "url": "https://themodernparentzone.com/adoption/"
+        }
+      ]
+    }
+  ]
+}

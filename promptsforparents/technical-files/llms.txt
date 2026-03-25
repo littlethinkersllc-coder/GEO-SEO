@@ -1,0 +1,69 @@
+# Prompts for Parents
+
+> The go-to resource for AI prompts tailored to parenting. We help parents use ChatGPT, Claude, Gemini, and other AI tools effectively for everyday parenting tasks -- from homework help and meal planning to bedtime stories and educational activities.
+
+## About
+
+Prompts for Parents is an educational website that provides ready-to-use, tested AI prompts designed specifically for parents. Our prompts are organized by parenting need and optimized to produce high-quality results across major AI platforms including ChatGPT, Claude, and Gemini. Every prompt is written by parents, for parents, with child safety and age-appropriateness as core principles.
+
+## Content Pillars
+
+### Homework Help Prompts
+- Prompts for explaining math concepts at different grade levels
+- Science project brainstorming and research assistance prompts
+- Reading comprehension and book report helper prompts
+- Writing tutoring prompts that guide without giving answers
+- Study guide and flashcard generation prompts
+- URL: https://promptsforparents.org/prompts/homework-help/
+
+### Creative Activity Prompts
+- Arts and crafts project idea generator prompts
+- Indoor and outdoor activity planning prompts
+- Rainy day entertainment prompts by age group
+- DIY science experiment prompts with household items
+- Creative writing and storytelling prompts for kids
+- URL: https://promptsforparents.org/prompts/creative-activities/
+
+### Meal Planning Prompts
+- Weekly family meal plan generator prompts
+- Kid-friendly recipe prompts filtered by dietary needs
+- Picky eater solution prompts
+- Lunch box idea prompts by age and season
+- Grocery list and budget-friendly meal prompts
+- URL: https://promptsforparents.org/prompts/meal-planning/
+
+### Bedtime Story Prompts
+- Personalized bedtime story generator prompts
+- Age-appropriate story prompts by theme and length
+- Interactive choose-your-own-adventure story prompts
+- Calming and mindfulness story prompts for anxious kids
+- Holiday and seasonal story prompts
+- URL: https://promptsforparents.org/prompts/bedtime-stories/
+
+### Educational Game Prompts
+- Trivia and quiz game generator prompts by subject
+- Math game and puzzle creation prompts
+- Vocabulary and language learning game prompts
+- Geography and history game prompts
+- STEM challenge prompts for different age groups
+- URL: https://promptsforparents.org/prompts/educational-games/
+
+### Parenting Advice Prompts
+- Age-appropriate conversation starter prompts
+- Behavior and discipline strategy prompts
+- Screen time and technology boundary prompts
+- Social skills and emotional intelligence prompts
+- School communication and advocacy prompts
+- URL: https://promptsforparents.org/prompts/parenting-advice/
+
+## Key Pages
+
+- Homepage: https://promptsforparents.org/
+- All Prompts: https://promptsforparents.org/prompts/
+- Blog: https://promptsforparents.org/blog/
+- About: https://promptsforparents.org/about/
+- Contact: https://promptsforparents.org/contact/
+
+## Optional
+
+- Privacy Policy: https://promptsforparents.org/privacy-policy/
