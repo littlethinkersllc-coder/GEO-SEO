@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructional Design Process & AI Toolkit | Walter Mfuko</title>
+  <meta name="description" content="Walter Mfuko's instructional design methodology, frameworks (ADDIE, SAM, UDL), tools (Storyline, Rise, Canvas, Synthesia, Claude), and AI-augmented workflow.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">WM</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="project-hero">
+    <div class="project-hero__inner">
+      <span class="project-hero__tag">Process & Tools</span>
+      <h1>Instructional Design Process & AI Toolkit</h1>
+      <p>Walter's methodology, tools, and modern AI-augmented workflow.</p>
+    </div>
+  </section>
+
+  <!-- Content + Quick Reference -->
+  <section class="section">
+    <div class="section__inner" style="display: grid; grid-template-columns: 1fr 400px; gap: 3rem; align-items: start;">
+
+      <!-- Main Content -->
+      <div>
+        <h2>Design <span class="accent">Philosophy</span></h2>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">Every project begins with understanding the learner. I combine established instructional design frameworks with modern AI-augmented tools to create learning experiences that are accessible, engaging, and measurably effective.</p>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">My process is iterative and data-informed. I use rapid prototyping to test assumptions early, gather feedback often, and refine until the learning experience meets its objectives.</p>
+
+        <h2 style="margin-top: 2.5rem;">Primary <span class="accent">Frameworks</span></h2>
+
+        <h3 style="margin-top: 1.5rem;">ADDIE</h3>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">The foundation of my systematic approach: Analyze, Design, Develop, Implement, Evaluate. I use ADDIE for large-scale curriculum projects where thorough front-end analysis and structured development phases produce the best outcomes.</p>
+
+        <h3>SAM (Successive Approximation Model)</h3>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">For projects that benefit from rapid iteration, I use SAM's agile-inspired approach. Quick prototyping cycles allow stakeholders to see working examples early and provide feedback that shapes the final product.</p>
+
+        <h3>Universal Design for Learning (UDL)</h3>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">UDL is not an add-on but a design foundation. I build multiple means of engagement, representation, and action/expression into every project from the start, ensuring accessibility is inherent rather than retrofitted.</p>
+
+        <h2 style="margin-top: 2.5rem;">AI-Augmented <span class="accent">Workflow</span></h2>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">I integrate AI tools strategically throughout the design process:</p>
+        <ul style="padding-left: 1.5rem; margin-bottom: 1rem; line-height: 2;">
+          <li><strong>Claude</strong> for content structuring, learning objective refinement, and assessment design</li>
+          <li><strong>Synthesia</strong> for scalable video-based instructional content</li>
+          <li><strong>AI-assisted analytics</strong> for interpreting learner performance data and identifying improvement opportunities</li>
+        </ul>
+
+        <h2 style="margin-top: 2.5rem;">Evaluation <span class="accent">Approach</span></h2>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">I measure impact using the Kirkpatrick model (reaction, learning, behavior, results) supplemented by Phillips ROI methodology when stakeholders need to quantify the business value of training investments.</p>
+      </div>
+
+      <!-- Quick Reference Panel -->
+      <div class="quick-ref" style="position: sticky; top: calc(var(--nav-height) + 2rem);">
+        <div class="quick-ref__title">Quick Reference</div>
+
+        <div class="quick-ref__item">
+          <div class="quick-ref__label">Primary Frameworks</div>
+          <div class="quick-ref__value">ADDIE, SAM, UDL</div>
+        </div>
+
+        <div class="quick-ref__item">
+          <div class="quick-ref__label">Evaluation Model</div>
+          <div class="quick-ref__value">Kirkpatrick + Phillips ROI</div>
+        </div>
+
+        <div class="quick-ref__item">
+          <div class="quick-ref__label">Primary Tools</div>
+          <div class="quick-ref__value">Storyline, Rise, Canvas, Synthesia, Claude</div>
+        </div>
+
+        <div class="quick-ref__item">
+          <div class="quick-ref__label">Data Tools</div>
+          <div class="quick-ref__value">Python, Google Analytics, Tableau</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Navigation -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section__inner">
+      <div class="project-nav">
+        <a href="university-profdev.html">&larr; Previous: University Professional Development</a>
+        <a href="../portfolio.html">All Projects &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Walter Mfuko. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile fix for the two-column layout -->
+  <style>
+    @media (max-width: 768px) {
+      .section__inner[style*="grid-template-columns"] {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .quick-ref {
+        position: static !important;
+        max-width: 100% !important;
+        order: -1;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

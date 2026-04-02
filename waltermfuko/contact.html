@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Connect | Walter Mfuko</title>
+  <meta name="description" content="Get in touch with Walter Mfuko for instructional design collaboration, speaking opportunities, or professional connections.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">WM</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__inner">
+      <span class="hero__badge">Contact</span>
+      <h1>Let's <span class="accent">Connect</span></h1>
+      <p>Interested in discussing instructional design, learning technology, or potential collaboration? I'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="section">
+    <div class="section__inner">
+      <div class="contact-grid">
+
+        <!-- Contact Info - NO location, NO "available for", NO "hire me" -->
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <div class="contact-info__label">Email</div>
+            <div class="contact-info__value">
+              <a href="mailto:wmfuko@gmail.com">wmfuko@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__label">LinkedIn</div>
+            <div class="contact-info__value">
+              <a href="https://www.linkedin.com/in/waltermfuko/" target="_blank" rel="noopener">linkedin.com/in/waltermfuko</a>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3>What I'm Interested In</h3>
+            <ul style="margin-top: 0.75rem; padding-left: 1.25rem; color: var(--color-text-light); line-height: 2;">
+              <li>Instructional design collaboration</li>
+              <li>Learning technology discussions</li>
+              <li>Speaking and presentation opportunities</li>
+              <li>Professional networking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Walter Mfuko. All rights reserved.</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
