@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NameDrop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-nba">
+  <div class="bg-animation">
+    <div class="floating-ball"></div>
+  </div>
+
+  <div id="confettiContainer"></div>
+
+  <div class="game-wrapper">
+    <!-- Header -->
+    <div class="game-header">
+      <a href="index.html" class="back-link" title="Back to categories">&larr;</a>
+      <h1>NBA Players</h1>
+      <div class="header-buttons">
+        <button class="icon-btn" onclick="toggleSound()" id="soundToggle" title="Toggle sound">ON</button>
+        <button class="icon-btn" onclick="openHelp()" title="How to play">?</button>
+      </div>
+    </div>
+
+    <!-- ========== SETUP SCREEN ========== -->
+    <div class="setup-screen" id="setupScreen">
+      <div class="setup-section">
+        <h3>Game Mode</h3>
+        <div class="btn-group">
+          <button class="mode-btn selected" data-mode="classic" onclick="selectMode('classic')">
+            Classic
+            <div class="mode-desc">Turn-based, no time limit on Easy</div>
+          </button>
+          <button class="mode-btn" data-mode="timed" onclick="selectMode('timed')">
+            Timed
+            <div class="mode-desc">Beat the clock every turn</div>
+          </button>
+          <button class="mode-btn" data-mode="survival" onclick="selectMode('survival')">
+            Survival
+            <div class="mode-desc">3 lives, don't lose them all</div>
+          </button>
+        </div>
+      </div>
+
+      <div class="setup-section">
+        <h3>Difficulty</h3>
+        <div class="btn-group">
+          <button class="diff-btn" data-diff="easy" onclick="selectDifficulty('easy')">
+            Easy
+            <div class="mode-desc">No timer, 3 hints, forgiving AI</div>
+          </button>
+          <button class="diff-btn selected" data-diff="medium" onclick="selectDifficulty('medium')">
+            Medium
+            <div class="mode-desc">30s timer, 2 hints, decent AI</div>
+          </button>
+          <button class="diff-btn" data-diff="hard" onclick="selectDifficulty('hard')">
+            Hard
+            <div class="mode-desc">15s timer, 1 hint, ruthless AI</div>
+          </button>
+        </div>
+      </div>
+
+      <div class="setup-section">
+        <h3>Your Stats</h3>
+        <div class="alltime-stats" id="allTimeStats">
+          <div class="alltime-item"><span>Games</span><span>0</span></div>
+          <div class="alltime-item"><span>Wins</span><span>0</span></div>
+          <div class="alltime-item"><span>Best Score</span><span>0</span></div>
+          <div class="alltime-item"><span>Best Streak</span><span>0</span></div>
+        </div>
+      </div>
+
+      <button class="btn-start" onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- ========== GAME SCREEN ========== -->
+    <div class="game-screen hidden" id="gameScreen">
+
+      <!-- Scoreboard -->
+      <div class="scoreboard">
+        <div class="score-box active" id="scoreBox1">
+          <div class="score-label">You</div>
+          <div class="score-value" id="score1">0</div>
+        </div>
+        <div class="vs-divider">VS</div>
+        <div class="score-box" id="scoreBox2">
+          <div class="score-label">CPU</div>
+          <div class="score-value" id="score2">0</div>
+        </div>
+      </div>
+
+      <!-- Timer -->
+      <div class="timer-container hidden" id="timerContainer">
+        <div class="timer-bar-wrapper">
+          <div class="timer-bar" id="timerBar"></div>
+        </div>
+        <div class="timer-text" id="timerText">30s</div>
+      </div>
+
+      <!-- Turn Indicator -->
+      <div class="turn-indicator your-turn" id="turnIndicator">Your Turn</div>
+
+      <!-- Streak Indicator -->
+      <div class="streak-indicator" id="streakIndicator"></div>
+
+      <!-- Lives (Survival) -->
+      <div class="lives-section hidden" id="livesSection">
+        <div class="section-label">Lives</div>
+        <div id="livesContainer"></div>
+      </div>
+
+      <!-- Required Letter -->
+      <div class="required-letter" id="requiredLetter">
+        <div class="required-label">Next name must start with</div>
+        <div class="big-letter" id="bigLetter">A</div>
+      </div>
+
+      <!-- Game History -->
+      <div class="game-history" id="gameHistory"></div>
+
+      <!-- Computer Thinking -->
+      <div class="computer-thinking hidden" id="computerThinking">
+        Computer is thinking<span class="thinking-dots"></span>
+      </div>
+
+      <!-- Error / Hint Messages -->
+      <div class="error-msg" id="errorMsg"></div>
+      <div class="hint-msg" id="hintMsg"></div>
+
+      <!-- Input -->
+      <div class="input-section">
+        <div class="input-wrapper">
+          <input type="text" class="player-input" id="playerInput" placeholder="Enter a name..." autocomplete="off" spellcheck="false">
+          <button class="btn-submit" id="submitBtn" onclick="submitName()">Go</button>
+          <div class="autocomplete-list" id="autocompleteList"></div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-row">
+        <button class="btn-hint" id="hintBtn" onclick="showHint()">Hint (2)</button>
+        <button class="btn-powerup" id="powerup-skip" onclick="usePowerUp('skip')">
+          <span class="powerup-icon">&#9193;</span>
+          <span class="powerup-label">Skip</span>
+          <span class="powerup-count">1</span>
+        </button>
+        <button class="btn-powerup" id="powerup-extraTime" onclick="usePowerUp('extraTime')">
+          <span class="powerup-icon">&#9201;</span>
+          <span class="powerup-label">+Time</span>
+          <span class="powerup-count">1</span>
+        </button>
+        <button class="btn-powerup" id="powerup-reveal" onclick="usePowerUp('reveal')">
+          <span class="powerup-icon">&#128065;</span>
+          <span class="powerup-label">Reveal</span>
+          <span class="powerup-count">1</span>
+        </button>
+        <button class="btn-powerup" style="margin-left:auto" onclick="endGame('You quit the game')">
+          <span class="powerup-icon">&#9724;</span>
+          <span class="powerup-label">End</span>
+        </button>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-label">Streak</span>
+          <span class="stat-value" id="currentStreak">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Best</span>
+          <span class="stat-value" id="bestStreak">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Correct</span>
+          <span class="stat-value" id="statCorrect">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Wrong</span>
+          <span class="stat-value" id="statWrong">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Used</span>
+          <span class="stat-value" id="statUsed">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== GAME OVER OVERLAY ========== -->
+  <div class="game-over-overlay" id="gameOverOverlay">
+    <div class="game-over-content">
+      <div class="game-over-title">Game Over</div>
+      <div class="game-over-reason" id="gameOverReason"></div>
+      <div id="gameOverSummary"></div>
+      <div style="display:flex; gap:10px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+        <button class="btn-share" onclick="shareScore()">Share Score</button>
+        <button class="btn-restart" onclick="restartGame()">Play Again</button>
+      </div>
+      <div style="margin-top:12px;">
+        <a href="index.html" style="color:var(--text-muted); font-size:0.85rem;">Back to Categories</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HELP MODAL ========== -->
+  <div class="modal-overlay" id="helpModal">
+    <div class="modal-content">
+      <h2>How to Play</h2>
+      <p><strong>The Name Chain Game!</strong></p>
+      <ul>
+        <li>A starting name is shown. You must enter a name where the <strong>first letter of the first name</strong> matches the <strong>first letter of the previous name's last name</strong>.</li>
+        <li>Example: If the last name was "Michael <strong>J</strong>ordan", you need someone whose first name starts with <strong>J</strong> (like "<strong>J</strong>ames Harden").</li>
+        <li>You and the computer take turns. Correct answers earn points!</li>
+        <li>Names cannot be reused once played.</li>
+      </ul>
+
+      <h2 style="margin-top:20px;">Features</h2>
+      <ul>
+        <li><strong>Streak Bonus:</strong> 3+ correct = 2x, 5+ = 3x, 7+ = 4x points!</li>
+        <li><strong>Hints:</strong> Get progressive hints (initials first, then full name).</li>
+        <li><strong>Power-Ups:</strong> Skip a turn, add time, or reveal valid answers.</li>
+        <li><strong>Autocomplete:</strong> Start typing to see matching names.</li>
+      </ul>
+
+      <h2 style="margin-top:20px;">Game Modes</h2>
+      <ul>
+        <li><strong>Classic:</strong> Standard turn-based play. End when you want.</li>
+        <li><strong>Timed:</strong> Beat the clock on every turn.</li>
+        <li><strong>Survival:</strong> 3 lives. Wrong answer or timeout = lose a life.</li>
+      </ul>
+
+      <h2 style="margin-top:20px;">Keyboard Shortcuts</h2>
+      <ul>
+        <li><strong>Enter:</strong> Submit your answer</li>
+        <li><strong>H:</strong> Use a hint (when not typing)</li>
+      </ul>
+
+      <button class="modal-close" onclick="closeHelp()">Got it!</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
