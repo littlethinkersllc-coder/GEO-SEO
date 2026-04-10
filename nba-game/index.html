@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NameDrop - The Ultimate Name Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="floating-ball"></div>
+  </div>
+
+  <div class="landing-container">
+    <header class="landing-header">
+      <h1 class="landing-title">NameDrop</h1>
+      <p class="landing-subtitle">The Ultimate Name Game</p>
+    </header>
+
+    <div class="category-grid" id="categoryGrid"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    // Dynamically build category cards from data.js
+    document.addEventListener('DOMContentLoaded', function() {
+      const grid = document.getElementById('categoryGrid');
+      for (const [key, cat] of Object.entries(CATEGORIES)) {
+        const count = getCategoryEntries(key).length;
+        const card = document.createElement('a');
+        card.href = `play.html?cat=${key}`;
+        card.className = 'category-card';
+        card.innerHTML = `
+          <span class="category-icon">${cat.icon}</span>
+          <h2 class="category-name">${cat.name}</h2>
+          <p class="category-desc">${cat.description}</p>
+          <span class="category-count">${count} names</span>
+        `;
+        // Apply hover theme color
+        card.addEventListener('mouseenter', () => document.body.className = cat.theme);
+        card.addEventListener('mouseleave', () => document.body.className = '');
+        grid.appendChild(card);
+      }
+    });
+  </script>
+</body>
+</html>
