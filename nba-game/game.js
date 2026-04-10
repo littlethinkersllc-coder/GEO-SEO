@@ -139,64 +139,9 @@ function createConfetti() {
   setTimeout(() => { container.innerHTML = ''; }, 3000);
 }
 
-// --------------- AUTOCOMPLETE ---------------
-let autocompleteVisible = false;
-
+// --------------- AUTOCOMPLETE (disabled - no giveaways) ---------------
 function setupAutocomplete() {
-  const input = document.getElementById('playerInput');
-  const list = document.getElementById('autocompleteList');
-  if (!input || !list) return;
-
-  input.addEventListener('input', function () {
-    const val = this.value.trim().toLowerCase();
-    list.innerHTML = '';
-    if (val.length < 2) { list.classList.remove('visible'); autocompleteVisible = false; return; }
-
-    const requiredLetter = getRequiredLetter();
-    const matches = GameState.categoryEntries.filter(p => {
-      const lower = p.toLowerCase();
-      const matchesSearch = lower.includes(val);
-      const matchesLetter = !requiredLetter || p.split(' ')[0][0].toUpperCase() === requiredLetter;
-      const notUsed = !GameState.usedNames.has(lower);
-      return matchesSearch && matchesLetter && notUsed;
-    }).slice(0, 6);
-
-    if (matches.length === 0) { list.classList.remove('visible'); autocompleteVisible = false; return; }
-
-    matches.forEach(name => {
-      const item = document.createElement('div');
-      item.className = 'autocomplete-item';
-      const idx = name.toLowerCase().indexOf(val);
-      if (idx >= 0) {
-        item.innerHTML = name.substring(0, idx) +
-          '<strong>' + name.substring(idx, idx + val.length) + '</strong>' +
-          name.substring(idx + val.length);
-      } else {
-        item.textContent = name;
-      }
-      item.addEventListener('mousedown', function (e) {
-        e.preventDefault();
-        input.value = name;
-        list.innerHTML = '';
-        list.classList.remove('visible');
-        autocompleteVisible = false;
-        input.focus();
-      });
-      list.appendChild(item);
-    });
-    list.classList.add('visible');
-    autocompleteVisible = true;
-  });
-
-  input.addEventListener('blur', function () {
-    setTimeout(() => { list.classList.remove('visible'); autocompleteVisible = false; }, 200);
-  });
-
-  input.addEventListener('focus', function () {
-    if (this.value.trim().length >= 2) {
-      this.dispatchEvent(new Event('input'));
-    }
-  });
+  // Autocomplete removed so players must know the names themselves
 }
 
 // --------------- TIMER ---------------
@@ -359,7 +304,6 @@ function submitName() {
   clearError();
   clearHint();
   input.value = '';
-  document.getElementById('autocompleteList')?.classList.remove('visible');
   switchPlayer();
   updateUI();
 }
